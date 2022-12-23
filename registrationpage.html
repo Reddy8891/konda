@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+    </style>
+    <body>
+        <form name="myform" method="post">
+        User Id:<input id="b" ></button><br><br>
+        <label for="user name:" id="ibl1">User Name:</label>
+            <input type="text" id="username1" name="user" placeholder="enter user name" required/><br></br>
+            <label for="password">User Password:</label>
+            <input type = "password" id="password" name = "pswd1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> <br><br>
+            Re-type password:  
+            <input type = "password" name = "pswd2"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> <br><br>  
+            Date of birth:<input type="date" id="date1" name="date1" max="2010-10-10" required/><br><br>
+            Address  
+            <br>  
+            <textarea cols="30" rows="3" value="address">  
+            </textarea>  <br><br>
+            Educational Qualification:<select required><option>select an option</option>
+                <option>X satndard</option>
+                <option>intermediate</option>
+                <option>B.E</option>
+                <option>M.Tech</option>
+            </select><br><br>
+            Hobbies:<input type="text" id="hobby" name="hobby"/><br><br>
+            list of certifications:<input type="text" id="c1" name="certi"/><br><br>
+            <input type="submit" value="submit"onclick="matchPassword()">
+
+            <br> <br>   
+            <script src="registrtion.js">
+                
+            </script>
+    </body>
+</html>
