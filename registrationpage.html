@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Registration</title>
+  </head>
+  <body>
+    <h1>Registration</h1>
+    <form id="registrationForm">
+      <label for="userId">User ID:</label><br>
+      <input type="text" id="userId1" name="userId"  readonly/><br>
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" minlength="6" required><br>
+      <div id="usernameError" style="color:red;"></div>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br>
+      <div id="passwordError" style="color:red;"></div>
+      <label for="repeatPassword">Repeat Password:</label><br>
+      <input type="password" id="repeatPassword" name="repeatPassword"><br>
+      <div id="repeatPasswordError" style="color:red;"></div>
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob"><br>
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address"></textarea><br>
+      <label for="education">Educational Qualification:</label><br>
+      <input type="text" id="education" name="education"><br>
+      <label for="hobbies">Hobbies:</label><br>
+      <input type="text" id="hobbies" name="hobbies"><br>
+      <label for="certifications">Certifications:</label><br>
+      <input type="text" id="certifications" name="certifications"><br>
+      <input type="submit" value="Submit">
+    </form> 
+    <script src="registrtion.js"></script>
+  </body>
+</html>
+
+        

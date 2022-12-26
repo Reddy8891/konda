@@ -1,19 +1,21 @@
 
-function matchPassword() {
-    var names=document.myform.user.value;
-    var pw1 = document.getElementById("psw1");
+  function generateUserId() {
 
-    var pw2 = document.getElementById("psw2");
-    if(names.length>6){
-        alert("name is ok")
-    }else if(names.length!=6){
-        alert("please give atkeast 6 characters")
+   
 
-    }
-    else if(pw1 != pw2)
-    {	
-        alert("Passwords did not match");
-    } else {
-        alert("Password created successfully");
-    }
+    var userId = (Math.pow(10,8));
+
+   
+
+   
+
+    userid=Math.trunc(parseInt(userId)*Math.random());
+
+   
+
+   
+
+    document.getElementById("userId1").value =userid;
+
   }
+  window.onload=generateUserId
